@@ -1,18 +1,17 @@
 <div class="app-container">
   <nav>
     <mat-toolbar color="primary" class="app-toolbar">
-      <span class="app-title">Angular Chatbot</span>
+      <button span mat-button class="app-title" routerLink="">Angular Chatbot</button>
       <span class="spacer"></span>
-      <button mat-icon-button routerLink="https://github.com/wayne930242" class="code-button">
-        <mat-icon>share</mat-icon>
-      </button>
+      <a mat-icon-button href="https://github.com/wayne930242" target="_blank" rel="noopener noreferrer"
+        class="code-button">
+        <mat-icon>code</mat-icon>
+      </a>
     </mat-toolbar>
   </nav>
-
   <main class="main-content">
     <router-outlet></router-outlet>
   </main>
-
   <footer class="app-footer">
   </footer>
 </div>
